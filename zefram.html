@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: Sans-Serif;
+            font-size: 50px;
+        }
+        #imgz {
+            display: none;
+            max-width: 100vw;
+            max-height: 100vh;
+            width: 100%;
+            height: 100%;
+        }
+        h3 {
+            text-align: center;
+            color: white;
+            font-family: Sans-Serif;
+            font-size: 12px;
+        }
+        #btn {
+            padding-top: 170px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+        }
+        .credit {
+            color: white;
+            position: absolute;
+            bottom: 0;
+            align-items: center;
+        }
+        h3 {
+            text-align: center;
+        }
+        button {
+            align-items: center;
+            appearance: none;
+            background-color: #3EB2FD;
+            background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+            background-size: calc(100% + 20px) calc(100% + 20px);
+            border-radius: 100px;
+            border-width: 0;
+            box-shadow: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: CircularStd,sans-serif;
+            font-size: 1rem;
+            height: auto;
+            justify-content: center;
+            line-height: 2.5;
+            padding: 6px 20px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color .2s,background-position .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: top;
+            white-space: nowrap;
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="overflow:hidden">
+    <img id="imgz" src="https://media.discordapp.net/attachments/1097508135784173639/1118825638862798898/IMG_0233.jpg">
+    <h1>Zefram</h1>
+    <h3>Work in progress, a lot of thing is still not ready</h3>
+    <div id="btn">
+        <button onclick="show()">Execute</button>
+    </div>
+</body>
+<script>
+    function show() {
+        document.getElementById('imgz')
+        .style.display = "block";
+        document.getElementById('btnID')
+        .style.display = "none";
+    }
+</script>
+</html>
