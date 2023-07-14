@@ -1,8 +1,12 @@
 <!doctype html>
 <!-- netz / 2/7/2023 -->
 <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>netzsworth</title>
-    <meta content="netz" property="og:title" />
+<meta content="netz" property="og:title" />
 <meta content="personal website" property="og:description" />
 <meta content="https://netzty.github.io" property="og:url" />
 <meta content="https://media.discordapp.net/attachments/1097508135784173639/1125095184259108935/IMG_0096.png" property="og:image" />
@@ -31,7 +35,8 @@
             text-align: center;
             font-family: Inter, Sans-Serif;
             color: white;
-            font-size: 40pt;
+            font-size: 32pt;
+            animation-delay: 700ms;
         }
         body {
             /* Whole background */
@@ -40,9 +45,13 @@
             background-position: center center;
             background-size: cover;
         }
+        #logo {
+            animation-delay: 200ms; /* image load compromise */
+        }
             /* Contact */
-        .contact {
-            padding-top: 50px;
+        #contact {
+            padding-top: 20px;
+            animation-delay: 1200ms;
         }
            /* Hiding the hyperlink blue line + padding */
         #fb {
@@ -61,21 +70,20 @@
 </head>
 <body>
     <div class="d1">
-        <img width="60%" src="src/Logo.svg" id="logo" /> <!-- LOGO -->
+        <img width = "70%" src="src/Logo.svg" class="animate__animated animate__backInDown" id="logo" /> <!-- LOGO -->
         
             <!-- BIO -->
-        <p>15, full stack dev,</p>
-        <p>Android/iOS enthusiast</p> 
+        <p class="animate__animated animate__flipInX">15, developer, UI/UX designer</p>
+        <p class="animate__animated animate__flipInX">Android/iOS enthusiast</p> 
         
             <!-- CONTACT -->
-        <div class="contact">
+        <div id="contact" class="animate__animated animate__fadeInUp">
             <!-- TWITTER -->
-            <a href="https://twitter.com/tk_netz" id="tw"><img height="100pt" src="src/Twitter.svg"></a>
+            <a href="https://twitter.com/tk_netz" id="tw"><img height="50pt" src="src/Twitter.svg"></a>
             <!-- FACEBOOK -->
-            <a href="https://fb.me/PreSteak" id="fb"><img height="100pt" src="src/Facebook.svg"></a>
+            <a href="https://fb.me/PreSteak" id="fb"><img height="50pt" src="src/Facebook.svg"></a>
             <!-- GITHUB -->
-            <a href="https://github.com/netzty" id="gh"><img height="100pt" src="src/GitHub.svg"></a>
+            <a href="https://github.com/netzty" id="gh"><img height="50pt" src="src/GitHub.svg"></a>
         </div>
     </div>
 </body>
-    
