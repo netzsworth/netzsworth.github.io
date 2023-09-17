@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+body,
+html {
+  height: 100%;
+}
+.animate__animated.animate__zoomIn {
+  --animate-duration: 0.5s;
+}
+body {
+    background-image: url("https://source.unsplash.com/random/?nature,wallpaper");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; /*yes...*/
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#main {
+  height: auto;
+  width: 90%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation-delay: 1s; /* image load compromise */
+
+  background: rgba(0, 0, 0, 0.329);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.685);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#textbox {
+  padding-left: 5%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-right: 5%;
+}
+#hi {
+  margin-top: 0%;
+  margin-bottom: -3%;
+  color: white;
+  font-family: "Inter", Sans-Serif;
+  font-size: 30pt;
+  text-align: center;
+}
+#introduction {
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  margin-right: auto;
+  font-size: 14pt;
+  text-align: center;
+}
+#contact {
+  width: 96%;
+  margin-left: 5pt;
+  margin-right: 5pt;
+  margin-bottom: 5pt;
+  display: flex;
+  flex-direction: row;
+}
+#dsc,
+#fbk,
+#ghb,
+#twt {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  height: 30pt;
+  width: 100%;
+  margin-right: 5pt;
+  font-size: 15pt;
+}
+#twt {
+  margin-right: 0pt;
+}
+#pfp {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+@media screen and (max-width: 500px) {
+#dsc:hover,
+#fbk:hover,
+#ghb:hover,
+#twt:hover {
+    background: rgba(255,255,255,0.25);
+}
+}
