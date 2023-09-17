@@ -1,0 +1,95 @@
+<!doctype html>
+<!-- netz / 2/7/2023 -->
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>netzsworth</title>
+<meta content="netz" property="og:title" />
+<meta content="personal website" property="og:description" />
+<meta content="https://netzsworth.github.io" property="og:url" />
+<meta content="https://media.discordapp.net/attachments/1097508135784173639/1125095184259108935/IMG_0096.png" property="og:image" />
+<meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .d1 {
+            /* Logo and the whole main page */
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        p {
+            /* Text */
+            margin: 0%;
+            text-align: center;
+            font-family: Inter, Sans-Serif;
+            color: white;
+            font-size: 32pt;
+            animation-delay: 700ms;
+        }
+        body {
+            /* Whole background */
+            background-image: url('https://media.discordapp.net/attachments/1097508135784173639/1125036960998752367/IMG_0082.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        #logo {
+            animation-delay: 200ms; /* image load compromise */
+        }
+            /* Contact */
+        #contact {
+            padding-top: 50px;
+            animation-delay: 1200ms;
+        }
+           /* Hiding the hyperlink blue line + padding */
+        #fb {
+            padding-left: 50px;
+            color: rgba(0,0,0,0);
+        }
+        #gh {
+            padding-left: 50px;
+            color: rgba(0,0,0,0);
+        }
+        #tw {
+            color: rgba(0,0,0,0);
+        }
+        #dc {
+            padding-left: 50px;
+            color: rgba(0,0,0,0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <img height="30%" src="src/Logo.svg" class="animate__animated animate__backInDown" id="logo" /> <!-- LOGO -->
+        
+            <!-- BIO -->
+        <p class="animate__animated animate__flipInX">15, developer, UI/UX designer</p>
+        <p class="animate__animated animate__flipInX">Android/iOS enthusiast</p> 
+        
+            <!-- CONTACT -->
+        <div id="contact" class="animate__animated animate__fadeInUp">
+            <!-- TWITTER -->
+            <a href="https://twitter.com/tk_netz" id="tw"><img height="70pt" src="src/Twitter.svg"></a>
+            <!-- FACEBOOK -->
+            <a href="https://fb.me/PreSteak" id="fb"><img height="70pt" src="src/Facebook.svg"></a>
+            <!-- GITHUB -->
+            <a href="https://github.com/netzsworth" id="gh"><img height="70pt" src="src/GitHub.svg"></a>
+            <!-- DISCORD --> 
+            <a href="https://discordapp.com/users/244265011281657856" id="dc"><img height="70pt" src="src/Discord.svg"></a
+        </div>
+    </div>
+</body>
