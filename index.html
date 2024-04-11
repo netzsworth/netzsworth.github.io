@@ -1,5 +1,6 @@
 <!-- v3 takes much more time to make, so here's the main part of v3 for y'all -->
 <!doctype html>
+<html oncontextmenu="return false">
 <head>
     <script src="https://kit.fontawesome.com/9aa7be907a.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,3 +28,20 @@
             <button onclick="location.href = 'https://x.com/tk_netz';" id="twt" class="fa-brands fa-x-twitter"></button>
         </div>
     </div>
+</body>
+<script>
+    var currentHtmlContent; 
+var element = new Image(); 
+var elementWithHiddenContent = document.querySelector("#main"); 
+var innerHtml = elementWithHiddenContent.innerHTML; 
+element.__defineGetter__("id", function() { 
+    currentHtmlContent= ""; 
+}); 
+setInterval(function() { 
+    currentHtmlContent= innerHtml; 
+    console.log(element);
+    console.clear();   
+    elementWithHiddenContent.innerHTML = currentHtmlContent; 
+}, 1000); 
+</script>
+</html>
