@@ -8,7 +8,7 @@ html {
   --animate-duration: 0.5s;
 }
 body {
-    background-image: url("https://source.unsplash.com/random/?nature,wallpaper");
+    background-image: url("/src/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
