@@ -197,7 +197,7 @@ body {
 
 #page-1 {
   display: flex;
-  background-image: url("src/dark.svg");
+  background-image: url("dark.svg");
   background-repeat: no-repeat;
   background-size: cover;
   align-items: flex-start;
@@ -321,7 +321,7 @@ h1 {
   }
 
   #page-1 {
-    background-image: url("src/light.svg");
+    background-image: url("light.svg");
   }
 }
 
