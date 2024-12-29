@@ -1,47 +1,60 @@
-<!-- v3 takes much more time to make, so here's the main part of v3 for y'all -->
-<!doctype html>
-<html oncontextmenu="return false">
-<head>
-    <script src="https://kit.fontawesome.com/9aa7be907a.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/index.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <meta content="netz" property="og:title" />
-    <meta content="personal website" property="og:description" />
-    <meta content="https://netzsworth.github.io" property="og:url" />
-    <meta content="#FFFFFF" data-react-helmet="true" name="theme-color" />
-</head>
-<body>
-    <div id="main" class="animate__animated animate__zoomIn">
-        <img id="pfp" src="https://avatars.githubusercontent.com/u/101963143" width="50%" height="50%">
-        <div id="textbox">
-            <p id="hi">Hi!</p>
-            <p id="introduction">I'm Khải, a 16 years old boy who likes to tinker with technology!</p>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">netzsworth</div>
+            <button class="contact-button">Contact</button>
+        </nav>
+        <div class="container">
+            <div class="pages" id="page-1">
+                <h1 id="introduction" class="slide-in-blurred-bottom">A high-school student who is
+                    passionate about technology and peculiar things in life</h1>
+                <div class="wrapper">
+                    <div class="marquee">
+                        <p>17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER -&nbsp;</p>
+                        <p>17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - PHONE/PC MODDER -&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pages" id="page-2">
+                <div id="contacts">
+                    <h1 id="stayintouch-mb" class="flicker-1">Let's stay in touch!</h1> 
+                    <!--there's probably a more elegant way, i do not know what im doing-->
+                    
+                    <a class="links" href="mailto:ta_khai@proton.me">email</a>
+                    <a class="links" href="https://x.com/tk_netz">x/twitter</a>
+                    <a class="links" href="https://www.facebook.com/PreSteak">facebook</a> <!--i don't use this-->
+                    <a class="links" href="https://discordapp.com/users/244265011281657856">discord</a> 
+                    <!--will not work if you don't have at least one mutual server with me, @netzsworth-->
+                    
+                    <a class="links" href="https://github.com/netzsworth">github</a>
+                    <a class="links" href="https://procursus.social/@netzsworth">mastodon</a>
+                </div>
+                <h1 id="stayintouch" class="flicker-1">Let's stay in touch!</h1> <!--for contacts-->
+            </div>
+                
         </div>
-        <div id="contact">
-            <button onclick="location.href = 'https://discordapp.com/users/244265011281657856';" id="dsc" class="fa-brands fa-discord"></button>
-            <button onclick="location.href = 'https://facebook.com/PreSteak';" id="fbk" class="fa-brands fa-facebook"></button>
-            <button onclick="location.href = 'https://github.com/netzsworth';" id="ghb" class="fa-brands fa-github"></button>
-            <button onclick="location.href = 'https://x.com/tk_netz';" id="twt" class="fa-brands fa-x-twitter"></button>
-        </div>
-    </div>
-</body>
-<script>
-    var currentHtmlContent; 
-var element = new Image(); 
-var elementWithHiddenContent = document.querySelector("#main"); 
-var innerHtml = elementWithHiddenContent.innerHTML; 
-element.__defineGetter__("id", function() { 
-    currentHtmlContent= ""; 
-}); 
-setInterval(function() { 
-    currentHtmlContent= innerHtml; 
-    console.log(element);
-    console.clear();   
-    elementWithHiddenContent.innerHTML = currentHtmlContent; 
-}, 1000); 
-</script>
+    </body>
 </html>
