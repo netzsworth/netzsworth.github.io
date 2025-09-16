@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -16,24 +17,24 @@
         </nav>
         <div class="container">
             <div class="pages" id="page-1">
-                <h1 id="introduction" class="slide-in-blurred-bottom">A high-school student who is
+                <h1 id="introduction" class="slide-in-blurred-bottom">An university student who is
                     passionate about technology and peculiar things in life</h1>
                 <div class="wrapper">
                     <div class="marquee">
                         <p>17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER -&nbsp;</p>
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER -&nbsp;</p>
                         <p>17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
-                            DESIGNER - PHONE/PC MODDER -&nbsp;</p>
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER - 17 YEARS OLD - VIETNAMESE 🇻🇳 - HE/HIM - UI/UX
+                            DESIGNER -&nbsp;</p>
                     </div>
                 </div>
             </div>
@@ -45,7 +46,21 @@
                     <a class="links" href="https://www.instagram.com/netzsworth/">instagram</a>
                     <a class="links" href="https://x.com/tk_netz">x/twitter</a>
                     <a class="links" href="https://www.facebook.com/PreSteak">facebook</a> <!--i don't use this-->
-                    <a class="links" href="https://discordapp.com/users/244265011281657856">discord</a> 
+                    <a class="links" href="#" id="discord-link">discord</a>
+                    <div id="discord-dialog" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#222; color:#fff; padding:1em 2em; border-radius:8px; z-index:1000; font-family:inherit;">
+                        Discord username copied: <b>netzsworth</b>
+                    </div>
+                    <script>
+                        document.getElementById('discord-link').addEventListener('click', function(e) {
+                            e.preventDefault();
+                            const username = 'netzsworth';
+                            navigator.clipboard.writeText(username).then(function() {
+                                const dialog = document.getElementById('discord-dialog');
+                                dialog.style.display = 'block';
+                                setTimeout(() => { dialog.style.display = 'none'; }, 1800);
+                            });
+                        });
+                    </script>
                     <!--will not work if you don't have at least one mutual server with me, @netzsworth-->
                     
                     <a class="links" href="https://github.com/netzsworth">github</a>
